@@ -33,7 +33,9 @@
         grid-column: 2;
         font-size: calc(0.8em + 1vw);
         line-height: 6.5vh;
+        font-weight: bold;
         overflow: hidden;
+        color: green;
     }
     .Infobox{
         line-height: 12.5vh;
