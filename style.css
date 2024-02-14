@@ -35,7 +35,7 @@
         line-height: 6.5vh;
         overflow: hidden;
     }
-    infobox{
+    .Infobox{
         line-height: 12.5vh;
         font-size: calc(0.6em + 1vw);
         overflow: hidden;
