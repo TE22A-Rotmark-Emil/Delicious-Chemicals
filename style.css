@@ -112,13 +112,11 @@
     }
     ItemName{
         grid-row: 1;
-        line-break:strict;
-        vertical-align: middle;
+        align-self:flex-end;
+        font-size: calc(1.2em + 1vw)
     }
     Price{
         grid-row: 2;
-        white-space: 0;
-        vertical-align: baseline;
     }
     .Purchase{
         grid-row: 1/3;
