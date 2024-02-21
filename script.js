@@ -15,6 +15,7 @@ function Buy(name, price){
             li.textContent=element.name +  " €" + element.price;
             Basket.append(li);
             pricething += element.price;
+            pricething = Math.round(pricething)
             TotalCost.innerHTML = pricething;
         });
     }
