@@ -123,4 +123,12 @@
         grid-column: 3/5;
         font-size: calc(1.6em + 2vw);
     }
+    .Basket{
+        display: grid;
+        grid-template-rows: 75% 25%;
+    }
+    TotalCost{
+        grid-row: 2;
+        font-size: calc(1.6em + 2vw);
+    }
 }
