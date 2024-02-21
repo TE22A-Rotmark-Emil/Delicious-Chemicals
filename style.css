@@ -125,10 +125,10 @@
     }
     .Basket{
         display: grid;
-        grid-template-rows: 75% 25%;
+        grid-template-rows: 85% 15%;
     }
     TotalCost{
         grid-row: 2;
-        font-size: calc(1.6em + 2vw);
+        font-size: calc(0.9em + 1.2vw);
     }
 }
