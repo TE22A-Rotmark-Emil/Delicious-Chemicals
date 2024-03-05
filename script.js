@@ -14,7 +14,7 @@ function Buy(name, price){
             let li = document.createElement("li");
             li.textContent=element.name +  " €" + element.price;
             li.addEventListener("click", function(){
-                RemoveItem(this);
+                RemoveItem(this, element.price);
             });
             Basket.append(li);
             pricething += element.price;
@@ -24,8 +24,11 @@ function Buy(name, price){
     }
 }
 
-function RemoveItem(li){
+function RemoveItem(item, cost){
     const TotalCost = document.querySelector("Price");
-    TotalCost -= li.price;
-    li.remove();
+    let pricething = parseInt(TotalCost.innerHTML);
+    pricething -= cost;
+    pricething = Math.round(pricething);
+    TotalCost.innerHTML = pricething;
+    item.remove();
 }
