@@ -13,10 +13,18 @@ function Buy(name, price){
         ItemList.forEach(element => {
             let li = document.createElement("li");
             li.textContent=element.name +  " €" + element.price;
+            li.addEventListener("click", function(){
+                RemoveItem(li);
+            });
             Basket.append(li);
             pricething += element.price;
-            pricething = Math.round(pricething)
+            pricething = Math.round(pricething);
             TotalCost.innerHTML = pricething;
         });
     }
+}
+
+function RemoveItem(li){
+    const Basket = document.querySelector(".BasketList");
+    Basket.remove(li);
 }
