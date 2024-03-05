@@ -25,6 +25,5 @@ function Buy(name, price){
 }
 
 function RemoveItem(li){
-    const Basket = document.querySelector(".BasketList");
-    Basket.remove(li);
+    li.remove();
 }
