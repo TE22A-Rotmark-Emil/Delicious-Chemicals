@@ -14,7 +14,7 @@ function Buy(name, price){
             let li = document.createElement("li");
             li.textContent=element.name +  " €" + element.price;
             li.addEventListener("click", function(){
-                RemoveItem(li);
+                RemoveItem(this);
             });
             Basket.append(li);
             pricething += element.price;
