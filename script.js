@@ -25,5 +25,7 @@ function Buy(name, price){
 }
 
 function RemoveItem(li){
+    const TotalCost = document.querySelector("Price");
+    TotalCost -= li.price;
     li.remove();
 }
