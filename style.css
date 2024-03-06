@@ -13,6 +13,131 @@
     }
 }
 @media screen and (min-width: 680px) and (max-width: 959px){
+    html{
+        text-align: center;
+        vertical-align: middle;
+    }
+    body{
+        background-color:#D9D9D9;
+        width: 100vw;
+        height: 99vh;
+    }
+    .CompanyLogo{
+        grid-column: 1;
+        justify-self: center;
+        height: 100%;
+    }
+    companyName{
+        grid-column: 2;
+        font-size: calc(0.6em + 1vw);
+        line-height: 6.5vh;
+        font-weight: bold;
+        overflow: hidden;
+        color: green;
+    }
+    .Infobox{
+        line-height: 12.5vh;
+        font-size: calc(1em + 1.5vw);
+        overflow: hidden;
+    }
+    .Header{
+        margin: 1vh;
+        background-color: white;
+        width: 99vw;
+        height: 14vh;
+        display: grid;
+        min-height: 0;
+        min-width: 0;
+        grid-template-columns: 10% 10% 20% 20% 20% 20%;
+        grid-template-rows: 100%;
+        max-height: 100%;
+    }
+    .Sidebar{
+        float: left;
+        width: 49vw;
+        height: 83vh;
+        display: grid;
+        grid-template-rows: 30% 70%;
+        min-height: 0;
+        min-width: 0;
+    }
+    .ChemicalList{
+        margin: 1vh;
+        background-color: white;
+        display: grid;
+        min-height: 0;
+        min-width: 0;
+    }
+    chemicals{
+        line-height: 5.5vh;
+        font-size: calc(1.6em + 1.3vw);
+    }
+    .Basket{
+        margin: 1vh;
+        background-color: white;
+        min-height: 0;
+        min-width: 0;
+    }
+    .Products{
+        float: left;
+        margin: 1vh;
+        background-color: white;
+        height: 81vh;
+        width: 48vw;
+        min-height: 0;
+        min-width: 0;
+    }
+    .Product{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        min-height: 0;
+        min-width: 0;
+        width: 100%;
+        height: 25%;
+        border: 0.5vh solid black;
+        overflow: hidden;
+    }
+    .Acid{
+        grid-column: 1;
+        grid-row: 1;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        justify-self:baseline;
+        object-fit: cover;
+    }
+    .ProductInfo{
+        display: grid;
+        grid-template-columns: repeat(1, 100%)
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    ItemName{
+        grid-column: 3;
+        align-self: center;
+        float: left;
+        font-size: calc(1.0em + 1vw)
+    }
+    Price{
+        grid-row: 2;
+    }
+    .Purchase{
+        grid-row: 1/3;
+        grid-column: 3/5;
+        font-size: calc(1.6em + 2vw);
+    }
+    .Basket{
+        display: grid;
+        grid-template-rows: 85% 15%;
+    }
+    TotalCost{
+        grid-row: 2;
+        font-size: calc(1.6em + 3vw);
+    }
+    li{
+        font-size: calc(1.2em + 1vw)
+    }
 }
 @media screen and (min-width: 960px){
     html{
@@ -130,5 +255,8 @@
     TotalCost{
         grid-row: 2;
         font-size: calc(0.9em + 1.2vw);
+    }
+    li{
+        font-size: calc(0.6em + 1vw)
     }
 }
